@@ -16,9 +16,9 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Módulo {{ modulo.orden }}: {{ modulo.titulo }}</h5>
                                     <p class="card-text">{{ modulo.descripcion }}</p>
-                                    <button class="btn btn-primary btn-sm" disabled>
-                                        Próximamente
-                                    </button>
+                                    <a href="{% url 'modulos:detalle_modulo' modulo.id %}" class="btn btn-primary btn-sm">
+                                        Empezar
+                                    </a>
                                 </div>
                             </div>
                         </div>
